@@ -5,4 +5,4 @@ resources:
 - service.yaml
 images:
 - name: devspacemyregistry.azurecr.io
-  newTag: "v1"
+  newTag: "devspace1"
