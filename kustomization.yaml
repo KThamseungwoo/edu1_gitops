@@ -4,5 +4,5 @@ resources:
 - deployment.yaml
 - service.yaml
 images:
-- name: devspacemyregistry.azurecr.io
+- name: kthamseungwoo/edu1:devspace1
   newTag: "devspace1"
