@@ -1,21 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: edu1
+  name: devspace-dev
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: edu1
+      app: devspace-dev
   template:
     metadata:
       labels:
-        app: edu1
+        app: devspace-dev
     spec:
       containers:
-      - name: edu1
-        image: devspacemyregistry.azurecr.io/kthamseungwoo/edu1:devspace1
+      - name: nginx
+        #image: devspacemyregistry.azurecr.io/kthamseungwoo/edu1:devspace1
+        image: nexus.dspace.kt.co.kr/library/nginx:1.27.0
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 80
