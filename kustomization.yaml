@@ -1,8 +1,8 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- deployment.yaml
-- service.yaml
-images:
-- name: nexus.dspace.kt.co.kr/library/nginx:1.27.0
-  newTag: "from-devspace-nexus"
+#apiVersion: kustomize.config.k8s.io/v1beta1
+#kind: Kustomization
+#resources:
+#- deployment.yaml
+#- service.yaml
+#images:
+#- name: nexus.dspace.kt.co.kr/library/nginx:1.27.0
+#  newTag: "from-devspace-nexus"
