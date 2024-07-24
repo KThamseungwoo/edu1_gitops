@@ -17,9 +17,8 @@ spec:
       - name: nginx
         #image: devspacemyregistry.azurecr.io/kthamseungwoo/edu1:devspace1
         image: nexus.dspace.kt.co.kr/library/nginx:1.27.0
-        imagePullSecrets:
-        - name: devspace-nexus
         imagePullPolicy: Always
         ports:
         - containerPort: 80
-
+      imagePullSecrets:
+      - name: devspace-nexus
